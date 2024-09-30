@@ -13,8 +13,8 @@ from selenium.webdriver.common.by import By
 service=Service(r"C:\Drives\edgedriver_win64\msedgedriver.exe")
 driver=webdriver.Edge(service=service)
 driver.get("https://www.facebook.com/")
-driver.find_element(By.NAME,"email").send_keys("01865651256")
-driver.find_element(By.ID,"pass").send_keys("Huq@5656")
+driver.find_element(By.NAME,"email").send_keys("valid_email")
+driver.find_element(By.ID,"pass").send_keys("valid_password")
 driver.find_element(By.NAME,"login").click()
 act_title=driver.title
 exp_title="Facebook"
